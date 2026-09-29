@@ -1,0 +1,38 @@
+Create a photorealistic Instagram-style street photo of a French woman aged 25–30 in Paris.
+
+She has a natural “girl next door” vibe: approachable, effortlessly pretty, relaxed, and believable rather than glamorous or over-polished. She should look like a real French lifestyle and fashion influencer, with realistic skin texture, subtle makeup, natural facial features, and a warm, authentic expression.
+
+The image must feel like a very natural iPhone / Instagram photo taken casually by a friend during a walk in Paris. The mood is candid, soft, stylish, and realistic, not studio-like or overly editorial.
+
+Important variation rules:
+
+- Each time this prompt is used, choose a DIFFERENT outfit.
+- Each time, choose a DIFFERENT Paris location.
+- Each time, vary the pose, the head position, and the hairstyle.
+- Keep the overall vibe consistent: natural, chic, Parisian, relatable.
+
+Outfit:
+Choose a stylish everyday outfit at random, different for each generation. It should feel like real Parisian fashion: understated, tasteful, feminine, and modern. Possible combinations include trench coat, blazer, leather jacket, wool coat, knit sweater, striped top, jeans, tailored trousers, midi skirt, dress, loafers, white sneakers, ankle boots, shoulder bag, tote bag, crossbody bag, scarf, or simple jewelry. Avoid flashy luxury-logo-heavy looks.
+
+Hairstyle:
+Choose a different hairstyle each time: loose wavy hair, messy bun, low bun, ponytail, half-up half-down, soft braid, tucked-behind-the-ears look, slightly messy natural hair, etc.
+
+Pose and expression:
+Use a relaxed, spontaneous pose with natural body language. The woman can be walking, leaning against a wall, sitting at a café terrace, holding a coffee, adjusting her bag, looking down the street, looking at the camera, or interacting naturally with the environment. Vary the head angle each time: slightly tilted, turned sideways, looking down, looking over the shoulder, chin slightly raised, etc. Expression should stay soft, warm, and genuine.
+
+Location:
+Choose a different authentic Paris location each time, and make sure it feels genuinely Parisian and lived-in, not postcard-touristy. Prefer charming everyday neighborhoods such as Oberkampf, République, Canal Saint-Martin, Bastille, the 11th arrondissement, Le Marais, Montorgueil, Batignolles, or Saint-Germain side streets. Use real Paris street details: Haussmann-style buildings, café terraces, bicycles, scooters, narrow sidewalks, boulangeries, flower shops, bookshops, market streets, tree-lined avenues, or quiet side streets. Do not prominently feature the Eiffel Tower.
+
+Framing:
+Vertical composition, full-body or three-quarter body portrait, eye-level framing, casual Instagram aesthetic. The subject should be the clear focus, with the background softly natural and believable.
+
+Lighting:
+Soft natural daylight, slightly overcast Paris light or gentle golden-hour light. Realistic tones, subtle shadows, no dramatic studio lighting.
+
+Style keywords:
+photorealistic, natural Paris street style, French influencer, candid, authentic, iPhone photo, Instagram aesthetic, chic, relatable, everyday elegance, spontaneous, realistic.
+
+Negative prompt:
+studio lighting, over-retouched skin, plastic skin, heavy glamour makeup, exaggerated pose, luxury logo focus, unrealistic proportions, uncanny face, distorted hands, extra fingers, fake HDR, over-sharpened image, tourist postcard Paris, Eiffel Tower close-up, text, watermark, logo.
+
+The final result should look like a real, candid Instagram photo of a stylish young French woman in a different Paris neighborhood each time, wearing a different outfit and naturally photographed in a spontaneous moment.
