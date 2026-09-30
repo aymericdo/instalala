@@ -1,38 +1,28 @@
-Create a photorealistic Instagram-style street photo of a French woman aged 25–30 in Paris.
+Create ONE photorealistic everyday photograph for the visual diary of Sophie, a French woman aged 25–30 based in Paris who enjoys neighbourhood walks, simple food, quiet interiors, occasional coastal escapes and accessible mountain walks.
 
-She has a natural “girl next door” vibe: approachable, effortlessly pretty, relaxed, and believable rather than glamorous or over-polished. She should look like a real French lifestyle and fashion influencer, with realistic skin texture, subtle makeup, natural facial features, and a warm, authentic expression.
+The specific brief appended below selects this photo's subject, location, season, camera viewpoint and whether Sophie is visible. These choices are mandatory. The diary includes both photos taken BY Sophie and occasional photos taken OF her by a friend. Do not automatically insert a woman into a landscape, a café table or an interior. Do not combine multiple scenes into a collage.
 
-The image must feel like a very natural iPhone / Instagram photo taken casually by a friend during a walk in Paris. The mood is candid, soft, stylish, and realistic, not studio-like or overly editorial.
+Photographic intention:
+Make the photograph about one ordinary thing that caught her attention: the last light on water, a fold of linen beside a book, a bend in a hiking trail, a shop window after rain, or an unguarded moment during a walk. A visually quiet photo is welcome. Find one modest, scene-specific detail to make this particular image interesting; do not make everything beautiful at once. Vary composition and visual density between photos according to the brief.
 
-Important variation rules:
+Camera and composition:
+Use a believable handheld smartphone photograph. The camera must be physically where the photographer could stand or sit. Eye level, a seated view of a table, a small upward glance or a close observation are all appropriate depending on the brief. No drone view, cinematic crane shot or impossible selfie perspective. For a photo taken by Sophie, she is behind the camera and should not appear in a reflection.
+Compose for one vertical Instagram photo without a decorative border. A landscape may occupy most of the frame. Leave ordinary breathing room, allow a naturally cropped chair edge or a slightly off-centre subject when plausible. Avoid the same centred composition every time. Keep horizons plausible and architecture upright; do not deliberately spoil the image with exaggerated tilt, blur or random defects.
 
-- Each time this prompt is used, choose a DIFFERENT outfit.
-- Each time, choose a DIFFERENT Paris location.
-- Each time, vary the pose, the head position, and the hairstyle.
-- Keep the overall vibe consistent: natural, chic, Parisian, relatable.
+Light, colour and texture:
+Use the light specified in the brief. Ordinary cloudy days, flat midday light, blue evening light, warm domestic light and restrained sunset colours are all welcome. The light source, cast shadows, reflections and sky must agree. Smartphone-like depth of field, with the environment usually readable. Slight low-light grain is appropriate only in low light. Preserve actual texture: worn stone, crumbs, ripples, leaves, creased cloth and natural skin when present. Avoid universal golden-hour glow, cinematic teal/orange grading, fake HDR, excessive background blur and over-sharpening.
 
-Outfit:
-Choose a stylish everyday outfit at random, different for each generation. It should feel like real Parisian fashion: understated, tasteful, feminine, and modern. Possible combinations include trench coat, blazer, leather jacket, wool coat, knit sweater, striped top, jeans, tailored trousers, midi skirt, dress, loafers, white sneakers, ankle boots, shoulder bag, tote bag, crossbody bag, scarf, or simple jewelry. Avoid flashy luxury-logo-heavy looks.
+Everyday life and travel:
+Paris scenes should feel lived in: modest apartments, worn counters, market bags, normal streets and neighbourhood cafés, rather than luxury displays or famous monuments. Outside Paris, use the geography of the chosen region: Atlantic waves and dune grasses, Breton rocks, French woodland or plausible Alpine paths. No Eiffel Tower inserted outside a Paris scene, tropical beach substituted for Brittany, or invented spectacular landmark. Use seasonally compatible vegetation, clothing and mountain conditions. Do not invent a current event or real-time weather claim.
 
-Hairstyle:
-Choose a different hairstyle each time: loose wavy hair, messy bun, low bun, ponytail, half-up half-down, soft braid, tucked-behind-the-ears look, slightly messy natural hair, etc.
+When Sophie is visible:
+Only include her when presence is "visible" or "back-only". Use the identity, clothing direction and action in the brief. She should have a relaxed, approachable, understated style. Adapt layers and shoes to the season and setting; no fashion heels for hiking or summer outfit in a snowy landscape. Clothing can look used and naturally creased. Subtle makeup, natural skin texture, plausible proportions and hands. A back view must stay a back view. Avoid glamour poses and the same direct-to-camera expression in every portrait.
 
-Pose and expression:
-Use a relaxed, spontaneous pose with natural body language. The woman can be walking, leaning against a wall, sitting at a café terrace, holding a coffee, adjusting her bag, looking down the street, looking at the camera, or interacting naturally with the environment. Vary the head angle each time: slightly tilted, turned sideways, looking down, looking over the shoulder, chin slightly raised, etc. Expression should stay soft, warm, and genuine.
+When Sophie is absent:
+The environment or still life is the subject. Do not add her face, body, hands, shoes or a model to fill empty space. Incidental distant people can appear in a street if appropriate, but should not take over the picture. Do not force a coffee, flowers or handbag into every image.
 
-Location:
-Choose a different authentic Paris location each time, and make sure it feels genuinely Parisian and lived-in, not postcard-touristy. Prefer charming everyday neighborhoods such as Oberkampf, République, Canal Saint-Martin, Bastille, the 11th arrondissement, Le Marais, Montorgueil, Batignolles, or Saint-Germain side streets. Use real Paris street details: Haussmann-style buildings, café terraces, bicycles, scooters, narrow sidewalks, boulangeries, flower shops, bookshops, market streets, tree-lined avenues, or quiet side streets. Do not prominently feature the Eiffel Tower.
+Creative freedom:
+Use the brief as a coherent starting point, not a stock-photo template. Choose a fresh arrangement of small background details, natural textures and spatial relationships within that scene. Keep objects functional, scale consistent, reflections physically plausible and the image emotionally understated.
 
-Framing:
-Vertical composition, full-body or three-quarter body portrait, eye-level framing, casual Instagram aesthetic. The subject should be the clear focus, with the background softly natural and believable.
-
-Lighting:
-Soft natural daylight, slightly overcast Paris light or gentle golden-hour light. Realistic tones, subtle shadows, no dramatic studio lighting.
-
-Style keywords:
-photorealistic, natural Paris street style, French influencer, candid, authentic, iPhone photo, Instagram aesthetic, chic, relatable, everyday elegance, spontaneous, realistic.
-
-Negative prompt:
-studio lighting, over-retouched skin, plastic skin, heavy glamour makeup, exaggerated pose, luxury logo focus, unrealistic proportions, uncanny face, distorted hands, extra fingers, fake HDR, over-sharpened image, tourist postcard Paris, Eiffel Tower close-up, text, watermark, logo.
-
-The final result should look like a real, candid Instagram photo of a stylish young French woman in a different Paris neighborhood each time, wearing a different outfit and naturally photographed in a spontaneous moment.
+Exclude:
+studio lighting, airbrushed or plastic skin, heavy makeup, glamour advertising, luxury logo focus, extreme poses, impossible anatomy, distorted hands, extra fingers, repeated cloned objects, implausible shadows or reflections, fantasy landscape, hyper-saturated sunset, stock-photo perfection, readable prominent signage, caption text baked into the photo, watermark, collage, logo overlay.

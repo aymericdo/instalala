@@ -4,6 +4,7 @@ import path from "node:path";
 import process from "node:process";
 import { pathToFileURL } from "node:url";
 import { chooseVariation, publicationDue, dailyPublicationDue } from "./planning.js";
+import { buildImagePrompt, buildCaptionPrompt } from "./editorial.js";
 import { publishBundle } from "./publication.js";
 import OpenAI from "openai";
 import { v2 as cloudinary } from "cloudinary";
@@ -66,21 +67,10 @@ function getConfig() {
 async function createEditorialContent(openai, config, state) {
   const basePrompt = await readFile(new URL("./prompts/sophie.txt", import.meta.url), "utf8");
   const variation = chooseVariation(state.history);
-  const imagePrompt = `${basePrompt}\n\nSpecific choices for this generation:\n${JSON.stringify(variation, null, 2)}`;
+  const imagePrompt = buildImagePrompt(basePrompt, variation);
   const response = await openai.responses.create({
     model: config.textModel,
-    input: `Écris une légende Instagram prête à publier pour @sophie.delauney69, personnage d'influenceuse parisienne lifestyle et mode.
-Langue : ${config.language}. Ton : ${config.voice}.
-Scène : ${JSON.stringify(variation)}.
-Écris à la première personne, comme un petit mot spontané à sa communauté, pas comme une description technique de la photo.
-Commence par une accroche courte, puis évoque une humeur, un détail de la tenue ou le plaisir d'une balade parisienne en 2 à 4 phrases (40 à 80 mots maximum hors hashtags).
-Ne récite pas la tenue, la coiffure, la pose et l'orientation du visage. Évite les clichés comme « l'esprit bien parisien », les slogans et le ton publicitaire.
-Tu peux terminer par une question simple liée à la scène si elle vient naturellement, sans appel artificiel aux likes ou aux abonnements.
-Utilise 0 à 2 emojis et des paragraphes courts séparés par une ligne vide.
-Termine sur une ligne séparée avec 3 à 5 hashtags ciblés sur Paris, le style ou l'ambiance de la scène. Aucun hashtag générique de type #viral ou #followme.
-N'invente pas de marque, partenariat, nom de commerce, adresse précise, événement personnel ou météo non fournis. Aucun discours commercial.
-Retourne uniquement la légende complète, sans guillemets, titre, explication ni liste de variantes.
-Contraintes supplémentaires : ${config.extraInstructions}`,
+    input: buildCaptionPrompt(config, variation, state.history),
   });
   const caption = response.output_text?.trim();
   if (!caption) throw new Error("OpenAI n'a renvoyé aucune légende.");
@@ -337,7 +327,7 @@ async function main() {
   console.log("Génération de l'image…");
   const image = await generateImage(openai, config, content.imagePrompt);
   const preview = await savePreview(image, content);
-  state.history = [...state.history, content.variation].slice(-30);
+  state.history = [...state.history, { ...content.variation, caption: content.caption }].slice(-30);
   await saveState(state);
 
   if (dryRun) {

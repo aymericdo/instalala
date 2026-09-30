@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { chooseVariation, publicationDue, dailyPublicationDue } from '../src/planning.js';
+import { publicationDue, dailyPublicationDue } from '../src/planning.js';
 import { resolveInstagramAccount } from '../src/index.js';
 
 test('48 hours across month and year boundaries; invalid configuration fails closed', () => {
@@ -10,17 +10,6 @@ test('48 hours across month and year boundaries; invalid configuration fails clo
   assert.equal(publicationDue(last, 48, Date.parse('2027-01-02T09:15:00Z')), true);
   for (const hours of [0, -1, NaN, Infinity]) assert.throws(() => publicationDue(null, hours));
   assert.throws(() => publicationDue('broken', 48));
-});
-
-test('successive generations do not repeat any of the seven recent choices', () => {
-  const history = [];
-  for (let i = 0; i < 100; i++) {
-    const next = chooseVariation(history);
-    for (const previous of history.slice(-7)) {
-      for (const key of Object.keys(next)) assert.notEqual(next[key], previous[key]);
-    }
-    history.push(next);
-  }
 });
 
 test('token identity is checked even with a configured account ID', async t => {

@@ -2,7 +2,19 @@
 
 Script Node.js pour **@sophie.delauney69**, influenceuse parisienne lifestyle et mode : une photo verticale et une courte légende française chaque jour. Génération OpenAI, hébergement Cloudinary ou Nginx, publication avec la connexion directe Instagram.
 
-Le prompt fourni est conservé intégralement dans `src/prompts/sophie.txt`. Des choix de tenue, lieu, coiffure, pose et orientation du visage sont ajoutés à chaque génération. L’historique évite de répéter les sept choix précédents (huit pour les lieux), y compris après redémarrage. Les images sont enregistrées en JPEG. Sans photo de référence, la ressemblance du visage entre les générations n’est pas garantie.
+Le prompt dans `src/prompts/sophie.txt` décrit un carnet visuel : quotidien parisien, petits détails et escapades. `src/editorial.js` choisit un brief précis (sujet, point de vue, présence ou absence de Sophie, lieu, lumière et saison), puis l’ajoute au prompt commun.
+
+Chaque série de dix générations, dans un ordre mélangé, contient :
+
+- un portrait pris par un ami et une silhouette vue de dos ;
+- deux scènes de rue, un détail du quotidien, une photo de café/repas et un intérieur ;
+- une balade dans la nature, une photo de bord de mer et une randonnée en montagne.
+
+Ainsi, huit photos sur dix sont prises du point de vue de Sophie, sans qu’elle apparaisse. La sélection essaie d’espacer les catégories similaires et les escapades ; une scène ne revient pas deux fois de suite dans sa catégorie. L’historique et la série en cours sont conservés entre les exécutions, y compris les simulations. Les anciens historiques de portraits restent compatibles.
+
+Chaque brief associe une lumière et un cadrage cohérents à la scène : mer vue depuis la plage, randonnée depuis un sentier accessible, table depuis une place assise, etc. La saison française ajuste la végétation et les vêtements, sans prétendre connaître la météo réelle. Les photos restent verticales en JPEG pour le post et la story. Les légendes alternent notes brèves et petits textes, avec 0 à 3 hashtags adaptés au sujet et les six légendes précédentes en contexte pour varier les tournures. Les escapades ne sont pas présentées comme un itinéraire en temps réel.
+
+Sans photo de référence, la ressemblance exacte du visage entre les portraits n’est pas garantie. Les prompts visent une esthétique naturelle ; le résultat généré reste à vérifier visuellement.
 
 ## Prérequis
 
@@ -76,7 +88,7 @@ npm start
 
 `npm start` constitue une demande explicite de publication et ne dépend pas de `DRY_RUN`. Pour générer sans publier, utiliser exclusivement `npm run dry-run`.
 
-La direction éditoriale est désormais le lifestyle parisien. `CONTENT_LANGUAGE`, `BRAND_VOICE` et `EXTRA_INSTRUCTIONS` ajustent la légende ; le prompt photo reste dans son fichier dédié. Les anciens fichiers Oresto restent à leur emplacement et ne sont pas utilisés par `publish-existing`.
+La direction éditoriale associe le quotidien parisien aux escapades et aux scènes sans portrait. `CONTENT_LANGUAGE`, `BRAND_VOICE` et `EXTRA_INSTRUCTIONS` ajustent la légende ; le prompt photo reste dans son fichier dédié. Les anciens fichiers Oresto restent à leur emplacement et ne sont pas utilisés par `publish-existing`.
 
 La cadence par défaut est **un post par jour calendaire à Paris** (`POST_SCHEDULE=daily`). Si un post a déjà été enregistré aujourd’hui, le script s’arrête avant génération et publication. Les simulations restent possibles à tout moment. Pour revenir à un délai glissant, utiliser `POST_SCHEDULE=interval` et `POST_INTERVAL_HOURS` (24 par défaut).
 
