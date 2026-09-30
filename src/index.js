@@ -17,6 +17,7 @@ const cliDryRun = process.argv.includes("--dry-run");
 const storyOnly = process.argv.includes("--publish-story-existing");
 const publishExisting = process.argv.includes("--publish-existing");
 const cliPublish = process.argv.includes("--publish") || publishExisting || storyOnly;
+
 if (cliDryRun && cliPublish) {
   throw new Error("Les options --dry-run et --publish sont incompatibles.");
 }
